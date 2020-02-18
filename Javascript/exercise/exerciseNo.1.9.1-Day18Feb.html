@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.9. แบบฝึกหัด</title>
+</head>
+
+<body>
+    <h1>1. คำสั่งต่อไปนี้จะแสดงค่าเป็นอะไร</h1>
+
+
+</body>
+<script>
+
+    //  1. คำสั่งต่อไปนี้จะแสดงค่าเป็นอะไร
+
+    alert(null || 2 || undefined)          //  2
+    alert(alert(1) || 2 || alert(3))      //  1 / 2
+    alert(1 && null && 2)                 //  null
+    alert(alert(1) && alert(2))           // 1  / underfined  *** alert คือคืนค่าเป็น undefined
+    alert(null || 2 && 3 || 4)           //  3 เพราะ OR จะหาค่า True 
+
+</script>
+
+
+</html>

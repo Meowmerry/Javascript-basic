@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swith Cases แบบฝึดหัด</title>
+</head>
+
+<body>
+  <h1>2. แปลง Code ดังกล่าวเป็น Switch cases</h1>
+  <code>
+        let a = +prompt('a?', '');<br>
+          if (a == 0) {<br>
+          alert( 0 );<br>
+                }<br>
+          if (a == 1) {<br>
+          alert( 1 );<br>
+          }<br>
+          if (a == 2 || a == 3) {<br>
+          alert( '2,3' );<br>
+          }<br>
+    </code>
+
+</body>
+<script>
+  let a = prompt('a?', '');
+  switch (a) {
+    case "0":
+      alert(0)
+      break;
+    case "1":
+      alert(1)
+      break;
+    case "2":
+    case "3":
+      alert('2,3')
+      break;
+    default:
+      alert("Don't match any case!! ")
+      break;
+  }
+
+</script>
+
+</html>

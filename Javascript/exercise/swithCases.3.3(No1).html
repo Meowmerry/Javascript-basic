@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swith Cases แบบฝึดหัด</title>
+</head>
+
+<body>
+    <h1> 3.3 (1) แปลง Code ดังกล่าวเป็น
+        if-else statement
+    </h1>
+    <code>
+        switch (browser) {
+            case 'Edge':<br>
+              alert( "You've got the Edge!" );<br>
+              break;<br>
+          
+            case 'Chrome':<br>
+            case 'Firefox':<br>
+            case 'Safari':<br>
+            case 'Opera':<br>
+              alert( 'Okay we support these browsers too' );<br>
+              break;<br>
+          
+            default:<br>
+              alert( 'We hope that this page looks ok!' );<br>
+          }<br>
+          
+
+    </code>
+
+</body>
+<script>
+
+    let browser = prompt("Please input your browser")
+
+    browser = browser.toLowerCase();
+
+    if (browser == "edge") {
+        alert("You've got the Edge!")
+    } else if (browser === "chrome" || browser === "firefox" || browser === "safari" || browser === "opera") {
+        alert('Okay we support these browsers too!')
+    } else {
+        alert('We hope that this page looks ok!');
+    }
+
+
+</script>
+
+</html>
