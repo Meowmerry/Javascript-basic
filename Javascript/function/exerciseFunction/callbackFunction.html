@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>exercise callback function</title>
+</head>
+
+<body>
+	<h1>6.2. แบบฝึกหัด แปลง function ข้างล่างให้อยู่ในรูป arrow function</h1>
+	<code>function ask(question, yes, no) { <br>
+        if (confirm(question)) yes()<br>
+        else no();<br>
+      }<br>
+      ask(<br>
+        "Do you agree?",<br>
+        function() { alert("You agreed."); },<br>
+        function() { alert("You canceled the execution."); }<br>
+      );<br>
+      </code>
+</body>
+
+<script>
+	const ask = (question, yes, no) => {
+		if (confirm(question)) yes()
+		else no()
+	}
+	ask("Do you agree?",
+		() => alert("You agreed."),
+		() => alert("You canceled the execution."));
+</script>
+</html>

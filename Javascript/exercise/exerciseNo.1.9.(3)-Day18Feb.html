@@ -13,8 +13,9 @@
 </body>
 <script>
     // if (!(inputAge >= 18 && inputAge <= 60)) 
-    if (youAges < 18 || youAges > 60) {
-        alert(`your age is ${youAges} years old. `)
+    let inputAge = prompt('Please input your age!')
+    if (!(inputAge >= 18 && inputAge <= 60))  {
+        alert(`your age is ${inputAge} years old. `)
     } else {
         alert('your age is out of range!')
     }
