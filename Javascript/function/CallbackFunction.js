@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Callback Function</title>
-</head>
-
-<body>
-	<h1>Callback Function</h1>
-
-</body>
-<script>
+// Callback Function 
 
 	function ask(question, yes, no) {
 		if (confirm(question)) yes()
@@ -25,7 +12,3 @@
 	}
 	// usage: functions showOk, showCancel are passed as arguments to ask
 	ask("Do you agree?", showOk, showCancel);
-
-</script>
-
-</html>
