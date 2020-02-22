@@ -1,0 +1,34 @@
+#contentCol {
+    background-color: #e9ebee;
+    color: #1d2129;
+}
+body {
+    overflow-y: scroll;
+}
+body {
+    background: #fff;
+    color: #1c1e21;
+    direction: ltr;
+    line-height: 1.34;
+    margin: 0;
+    padding: 0;
+    unicode-bidi: embed;
+}
+body {
+    display: block;
+    margin: 8px;
+}
+.navbar {
+    width: 100%;
+}
+
+.bg{
+    background-color: #4267b2;
+    border-bottom: 1px solid #29487d;
+    color: #fff;
+}
+.form-control {
+    width: 20% !important; 
+    height: calc(1.5em + .40rem + 2px) !important;
+    
+}
