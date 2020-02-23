@@ -2,34 +2,29 @@
 // 		เพื่อมาคำนวณ BMI ของคนทั้งสองคน เมื่อกรอกเสร็จแล้ว
 // 		ให้แสดง ชื่อ และ BMI ของคนที่มี BMI มากกว่าออกมาก
 
-let namePerson1 = prompt("Input your name!")
-let weightPerson1 = +prompt("Input your weight!")
-let heightPerson1 = +prompt("Input your height!")
+let firstName = prompt("Input your name!")
+let firstHeight = +prompt("Input your height!")
+let firstWeight = +prompt("Input your weight!")
 
-let namePerson2 = prompt("Input your name!")
-let weightPerson2 = +prompt("Input your weight!")
-let heightPerson2 = +prompt("Input your height!")
+let secondName = prompt("Input your name!")
+let secondHeight = +prompt("Input your height!")
+let secondWeight = +prompt("Input your weight!")
 
-let bmiFirstPerson = calculateBMI(heightPerson1,weightPerson1)
-let bmiSecondPerson = calculateBMI(heightPerson2,weightPerson2)
+let firstBMI = calculateBMI(heightPerson1,weightPerson1)
+let secondBMI = calculateBMI(heightPerson2,weightPerson2)
 
-// let calculateBMIPerson1 = (weightPerson1 / ((heightPerson1 / 100) ** 2))
-// console.log(calculateBMIPerson1)
-
-// let calculateBMIPerson2 = (weightPerson2 / ((heightPerson2 / 100) ** 2))
-// console.log(calculateBMIPerson2)
 
 //Compare BMI for 2 person
-if (calculateBMIPerson1 === calculateBMIPerson2) {
-	console.log(`You name is ${namePerson1} your BMI is ${calculateBMIPerson1} and equal ${namePerson2}`)
-} else if (calculateBMIPerson1 === calculateBMIPerson2) {
-	console.log(`You name is ${namePerson1} your BMI is ${calculateBMIPerson1} and more than ${namePerson2}`)
-} else {
-	console.log(`You name is ${namePerson2} your BMI is ${calculateBMIPerson2}and more than ${namePerson1}`)
+if(firstBMI > secondBMI){
+	printName(`Your name is ${firstName} and your BMI ${firstBMI}`)
+}else{
+	printName(`Your name is ${secondName} and your BMI ${secondBMI}`)
 }
 
-function printName( name, BMI)
-function calculateBMI(height, weight){
-	height/=100;
-	return weight/(height ** 2 )
+function printName(name, BMI){
+	alert(`Name ${name}\nBMI ${BMI}`)
+}
+function calculateBMI(height,weight){
+	height /=100;
+	return weight / (height ** 2)
 }
