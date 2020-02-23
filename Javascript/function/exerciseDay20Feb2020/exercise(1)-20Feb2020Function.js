@@ -3,9 +3,9 @@
 
 
 	let namePerson1 = prompt("Input your name!")
-	let BMIPerson1 = prompt("Input your BMI!")
+	let BMIPerson1 = +prompt("Input your BMI!")
 	let namePerson2 = prompt("Input your name!")
-	let BMIPerson2 = prompt("Input your BMI!")
+	let BMIPerson2 = +prompt("Input your BMI!")
 
 	if (BMIPerson1 === BMIPerson2) {
 		console.log(`You name is ${namePerson1} your BMI is ${BMIPerson1} and equal ${namePerson2}`)
