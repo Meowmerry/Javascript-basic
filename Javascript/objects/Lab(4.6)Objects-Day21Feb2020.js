@@ -11,6 +11,9 @@ let human = {
     age : 18,
     house : " Bangkok ",
     isSingle: false,
-    intelligent : 10
+    intelligent : 10,
+    
 }
+human["Computer Skill"] = 70;
+delete human["name"]["age"]
 console.log(human);
