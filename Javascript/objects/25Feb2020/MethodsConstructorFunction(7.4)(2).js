@@ -6,5 +6,10 @@
 // พูดง่าย ๆ ก็คือ value คือผลรวมของ prompt โดยเริ่มจาก startingValue
 
 function Accumulator(startingValue){
-
+	this.value = startingValue;
+	this.read = function(){
+		this.value = +prompt("Please enter number")		
+	};
 }
+let object = new Accumulator(10);
+console.log(object.read());
