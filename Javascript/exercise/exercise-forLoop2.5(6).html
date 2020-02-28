@@ -19,10 +19,10 @@
 </body>
 <script>
 
-  let number = prompt("Input the number!")
+  let number = Number(prompt("Input the number!"))
 
   while (true) {
-    let guess = prompt("Guess a number between 1 and 100. : ")
+    let guess = Number(prompt("Guess a number between 1 and 100. : "));
     if (number < guess) {
       guess = prompt("You've guessed too high! Keep guessing!");
     } else if (number > guess) {

@@ -139,33 +139,42 @@ let answer = "meow"
 
 if (yourName === answer) {
     alert('Hello meow, you are so smart!')
-} else if ( yourName !== answer) {
+} else if (yourName !== answer) {
     alert("Opp! who are you? I don't know you")
 } else {
     alert('Please answer question!!')
 }
 
+
+// let name = prompt('Please enter your name!');
+
+// if(name == 'meow'){
+//     alert('คุณเก่งมาก');
+// }else {
+//     alert('ฉันไม่รู้จักคุณ')
+// }
+
+
 //=======================================================
 // # 6.5 แบบฝึกหัด   3.	ใช้ prompt ในการรับคะแนนมาคำนวณเกรด
 
-let grade = prompt('Please input your !');
-if(grade > 80) {
-    alert("Your grade is : A ")
-}else if(grade <= 70 && grade <= 79) {
-    alert("Your grade is : B ")
-}else if(grade <= 60 && grade <= 69) {
-    alert("Your grade is : C ")
-}else if(grade <= 50 && grade <= 59) {
-    alert("Your grade is : D ")
-}else{
-    alert("Your grade is : F ")
-}
+let inputGrade = prompt('Please input your score!');
+if (inputGrade >= 80) {
+    console.log('A')
+} else if (inputGrade >= 70) {
+    console.log('B')
+} else if (inputGrade >= 60) {
+    console.log('C')
+} else if (inputGrade >= 50) {
+    console.log('D')
+} else {
+    console.log('F')
+} alert("Your grade is : F ")
 
 // # 6.5 แบบฝึกหัด   4.	เปลี่ยน if-else ข้างล่างในอยู่ในรูปของ Ternary Operators
 
 let myAge = prompt('How old are you? ')
 let price;
 
-price = (myAge < 18) ? 2000 :  3500;
+price = (myAge < 18) ? 2000 : 3500; alert(price)
 
-alert(price)
